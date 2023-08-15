@@ -1,1 +1,114 @@
-/* место для вашего кода */
+
+a {
+  text-decoration: none;
+}
+
+.text__underline {
+  border-bottom: 1px solid black;
+} /* подчеркивание ссылок по макету*/
+
+.header {
+  display: grid;
+  grid-template-columns: 597px 1fr 240px;
+  align-items: center;
+  padding: 92px 49px 92px 51px;
+}
+
+.header__menu {
+    max-width: 388px;
+}
+
+.header__links-list {
+  display: flex;
+  gap: 32px;
+  line-height: normal;
+}
+
+.header__links-list-item {
+  list-style: circle;
+}
+
+.header__links-list-item .header__links-list-item_no-bullit {
+  list-style: none;
+}
+
+.header__link {
+  font-size: 18px;
+}
+
+.header__link_active {
+    text-decoration: none;
+}
+
+.header__logo {
+  max-width: 148px;
+}
+
+.header__logo-image {
+  max-height: 105px;
+}
+
+.header__address {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 24.3px; 
+}
+
+
+
+
+
+.cover {
+background-color: #e3e3e3;
+}
+
+.overlay {
+}
+.cover__title {
+  font-size: 100px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 30px;
+}
+
+.aligned-text {
+}
+
+.letter-spacing-extended {
+  letter-spacing: 60px;
+}
+.no-letter-spacing {
+}
+.aligned-text_center {
+}
+.aligned-text_right {
+}
+
+.cover__description {
+}
+.cover__description-text {
+}
+.bet-button {
+}
+
+
+
+
+.lots {
+  background-color: rgb(26, 43, 43);
+  height: 200px;
+}
+.about {
+  background-color: aqua;
+  height: 200px;
+}
+footer {
+  background-color: aqua;
+  height: 200px;
+  
+}
+
