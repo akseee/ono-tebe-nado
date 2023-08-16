@@ -70,6 +70,7 @@ address {
   display: flex;
   flex-direction: column;
   min-height: 757px;
+  min-width: 1440px;
   color: white;
   text-transform: uppercase;
 
