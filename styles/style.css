@@ -2,18 +2,23 @@ a {
   text-decoration: none;
 }
 
+address {
+  font-style: normal;
+  line-height: 24.3px;
+}
+
 .text__underline {
   border-bottom: 1px solid black;
-} /* подчеркивание ссылок по макету*/
+}
 
 .overlay {
   position: absolute;
-  width: 100%;
-  height: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.6);
   z-index: -2;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .header {
@@ -37,16 +42,12 @@ a {
   list-style: circle;
 }
 
-.header__links-list-item .header__links-list-item_no-bullit {
+.header__links-list-item_no-bullit {
   list-style: none;
 }
 
 .header__link {
   font-size: 18px;
-}
-
-.header__link_active {
-  text-decoration: none;
 }
 
 .header__logo {
@@ -61,72 +62,72 @@ a {
   display: flex;
   flex-direction: column;
   font-size: 18px;
-  font-style: normal;
-  line-height: 24.3px;
 }
 
 .cover {
+  position: relative;
+  z-index: 0;
   display: flex;
   flex-direction: column;
   min-height: 757px;
-  background: url(/ono-tebe-nado/images/cover.jpg) center/cover no-repeat;
-  position: relative;
-  z-index: 0;
-
   color: white;
   text-transform: uppercase;
+
+  background: url(/ono-tebe-nado/images/cover.jpg) center/cover no-repeat;
 }
 
 .cover__title {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   padding: 165px 50px 0;
-  gap:20px;
   font-size: 100px;
   letter-spacing: 30px;
 }
 
-.aligned-text{
+.aligned-text {
   line-height: 115px;
 }
 
 .aligned-text_center {
+  margin-left: -60px;
+  line-height: 100%;
+  line-height: 100px;
   text-align: center;
-  line-height: 100px;
 }
+
 .aligned-text_right {
-  text-align: right;
   line-height: 100px;
-}
-.letter-spacing-extended {
-  letter-spacing: 60px;
+  text-align: right;
 }
 
 .no-letter-spacing {
-  letter-spacing: 0;
+  margin: -30px;
 }
-
 
 .cover__description {
   display: grid;
   grid-template-columns: 1055px 385px;
+  padding-top: 145px;
 }
-.cover__description-text {
 
-  text-align: end;
+.cover__description-text {
+  font-weight: normal;
   font-size: 22px;
   line-height: 28px;
-  font-weight: normal;
+  text-align: end;
   word-spacing: 17px;
 }
+
 .bet-button {
-  font-size: 22px;
   margin-left: 78px;
+  font-size: 22px;
 }
 
 .bet-button__border {
   border: 1px solid white;
   padding: 12px 32px;
 }
-
 
 .lots {
   margin: 180px 50px 0;
@@ -137,28 +138,26 @@ a {
 }
 
 .heading {
-  font-size: 40px;
   font-weight: 700;
-  text-transform: uppercase;
+  font-size: 40px;
   font-style: normal;
   line-height: 47px;
+  text-transform: uppercase;
 }
 
 .lots__card-list {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
   gap: 25px;
-
-  margin: 27px 0 30px;
-
+  margin: 27px 0 32px;
 }
+
 .lots__card-list-item {
-  list-style: none;
   max-width: 430px;
   min-height: 450px;
-  /* flex-grow: 1; */
+  list-style: none;
 }
 
 .card__link {
@@ -175,37 +174,33 @@ a {
 
 .card_type_film {
   background: url(/ono-tebe-nado/images/card-lot-01.jpg) center/cover no-repeat;
-
 }
 
 .card_type_book {
   background: url(/ono-tebe-nado/images/card-lot-02.jpg) center/cover no-repeat;
-
 }
+
 .card_type_picture {
   background: url(/ono-tebe-nado/images/card-lot-03.jpg) center/cover no-repeat;
-
 }
 
 .card__content {
-  padding: 50px 40px;
-  width: 100%;
-  height: 100%;
-
   display: flex;
-
   flex-direction: column;
   justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 50px 40px;
 }
 
-
 .card__title {
-  font-size: 22px;
   font-weight: 700;
+  font-size: 22px;
   line-height: 26.4px;
   text-decoration: underline;
   text-transform: uppercase;
 }
+
 .card__text {
   font-size: 20px;
   line-height: 24px;
@@ -217,15 +212,74 @@ a {
   line-height: 23px;
 }
 
-
-
-
-
 .about {
-  background-color: rgb(68, 114, 114);
-  height: 200px;
+  display: grid;
+  grid-template-columns: 430px 910px;
+  margin: 182px 50px 0;
 }
+
+.about__column-left {
+  justify-self: center;
+}
+
+.about__logo-circle {
+  max-width: 240px;
+  max-height: 240px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.about__logo-image {
+  padding: 63px 46px;
+}
+
+.about__column-right {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  align-self: end;
+  padding: 100px 0 0 25px;
+}
+
+.about__text {
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.about__text p:first-child {
+  padding-bottom: 28px;
+}
+
 footer {
-  background-color: aqua;
-  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 185px 50px 90px;
+}
+
+.footer__address {
+  display: flex;
+  flex-direction: column;
+  max-width: 240px;
+  font-size: 18px;
+}
+
+.footer__menu-list-item {
+  text-align: center;
+  list-style: none;
+}
+
+.footer__menu-link {
+  font-size: 18px;
+}
+
+.footer__social-list {
+  display: flex;
+  justify-content: space-between;
+  min-width: 240px;
+  list-style: none;
+}
+
+.footer__social-list-item {
+  max-width: 48px;
+  max-height: 48px;
 }
