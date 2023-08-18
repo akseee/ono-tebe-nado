@@ -1,41 +1,19 @@
-a {
-  text-decoration: none;
-}
-
-address {
-  font-style: normal;
-  line-height: 24.3px;
-}
-
-.text__underline {
-  border-bottom: 1px solid black;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -2;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-}
-
 .header {
-  display: grid;
-  grid-template-columns: 597px 1fr 240px;
+  display:flex;
+  justify-content: space-between;
   align-items: center;
-  padding: 92px 49px 92px 51px;
+  max-width: 1340px;
+  margin: 92px auto;
 }
 
 .header__links-list {
   display: flex;
-  gap: 32px;
+  gap: 33px;
   line-height: normal;
 }
 
 .header__links-list-item {
-  list-style: circle;
+  list-style-type: circle;
 }
 
 .header__links-list-item_no-bullit {
@@ -48,82 +26,114 @@ address {
 
 .header__logo {
   max-width: 148px;
+  margin-right: 148px;
 }
 
 .header__logo-image {
   max-height: 105px;
 }
 
-.header__address {
+address {
   display: flex;
   flex-direction: column;
   font-size: 18px;
+  font-style: normal;
+  line-height: 24.3px;
 }
+
+.header__address {
+  max-width: 240px;
+}
+
 
 .cover {
   position: relative;
+  z-index: -1;
+  background-image: url(../images/cover.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
   z-index: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 757px;
-  min-width: 1440px;
+  width: 100%;
+  height: 100%; 
+  background-color: rgba(0, 0, 0, 0.6);
+}  
+
+.cover__content {
+  padding: 165px 50px 0px;
+  position:relative;
+  z-index: 1;
   color: white;
   text-transform: uppercase;
-
-  background: url(/ono-tebe-nado/images/cover.jpg) center/cover no-repeat;
 }
 
 .cover__title {
+  font-size: 100px;
   display: flex;
   flex-direction: column;
+  line-height: 115%;
   gap: 20px;
-  padding: 165px 50px 0;
-  font-size: 100px;
-  letter-spacing: 30px;
+  letter-spacing: 0.3em;
+  font-weight: bold;
 }
 
 .aligned-text {
-  line-height: 115px;
+  text-align: left;
 }
 
 .aligned-text_center {
-  margin-left: -60px;
-  line-height: 100px;
+  display:block;
   text-align: center;
+  line-height: 1em;  
 }
 
 .aligned-text_right {
-  line-height: 100px;
   text-align: right;
+  line-height: 1em;  
+}
+
+.letter-spacing-extended {
+  letter-spacing: 0.6em;
 }
 
 .no-letter-spacing {
-  margin: -30px;
+  letter-spacing: normal;
 }
 
 .cover__description {
-  display: grid;
-  grid-template-columns: 1055px 385px;
-  padding-top: 145px;
+  padding: 135px 0 50px;
+  display: flex;
+  justify-content: end;
+
+  gap: 78px;
 }
 
 .cover__description-text {
   font-weight: normal;
   font-size: 22px;
-  line-height: 28px;
-  text-align: end;
-  word-spacing: 17px;
+  line-height: 1.27em;
+  word-spacing: 18px;
+  align-self: center;
 }
 
 .bet-button {
-  margin-left: 78px;
-  font-size: 22px;
-}
-
-.bet-button__border {
   border: 1px solid white;
   padding: 12px 32px;
-}
+  color: white;
+  font-family: inherit;
+  font-size: 22px;
+  text-transform: uppercase;
+  background: transparent;
+  cursor: pointer;
+} 
+
+
 
 .lots {
   margin: 180px 50px 0;
@@ -181,12 +191,13 @@ address {
 }
 
 .card__content {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 0 40px;
   width: 100%;
   height: 100%;
+  padding: 0 40px;
 }
 
 .card__title {
@@ -209,17 +220,23 @@ address {
   font-size: 20px;
   line-height: 23px;
 }
-
+/* 
 .about {
   display: grid;
   grid-template-columns: 430px 910px;
   margin: 182px 50px 0;
 }
 
-.about__column-left {
-  justify-self: center;
+.about__column {
+
 }
 
+  /* display: flex;
+  flex-direction: column;
+  gap: 100px;
+  align-self: end;
+  padding: 100px 0 0 25px; */
+  /*
 .about__logo-circle {
   max-width: 240px;
   max-height: 240px;
@@ -231,13 +248,7 @@ address {
   padding: 63px 46px;
 }
 
-.about__column-right {
-  display: flex;
-  flex-direction: column;
-  gap: 100px;
-  align-self: end;
-  padding: 100px 0 0 25px;
-}
+
 
 .about__text {
   font-size: 20px;
@@ -248,7 +259,7 @@ address {
   padding-bottom: 28px;
 }
 
-footer {
+.footer {
   display: flex;
   justify-content: space-between;
   margin: 185px 50px 90px;
@@ -280,4 +291,4 @@ footer {
 .footer__social-list-item {
   max-width: 48px;
   max-height: 48px;
-}
+} */
