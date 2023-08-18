@@ -15,7 +15,7 @@
       <nav class="header__menu">
         <ul class="header__links-list">
           <li class="header__links-list-item header__links-list-item_no-bullit">
-            <a href="#0" class="header__link link_active">главная</a>
+            <a href="#0" class="header__link link__active">главная</a>
           </li>
           <li class="header__links-list-item">
             <a href="#0" class="header__link">посмотреть лоты</a>
@@ -33,39 +33,47 @@
         />
       </a>
       <address class="address header__address">
-        <a class="header__address-item" href="tel:+9-999-555-55-55">+9 999 555 5555</a>
-        <a class="header__address-item" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+        <a class="header__address-item" href="tel:+9-999-555-55-55"
+          >+9 999 555 5555</a
+        >
+        <a class="header__address-item" href="mailto:info@sobaka.ge"
+          >info@sobaka.ge</a
+        >
         <p class="header__address-item">наб. Принсенграхт 263-265, Амстердам</p>
       </address>
     </header>
 
-    <main> 
+    <main>
       <section class="cover">
         <div class="overlay"></div>
-          <div class="cover__content">
-            <h1 class="cover__title">
-              <span class="aligned-text">
-                  о<span class="letter-spacing-extended">н</span><span class="no-letter-spacing">о</span>
-              </span>
-                <span class="aligned-text_center">
-                  те<span class="letter-spacing-extended">бе</span>
-              </span>
-              <span class="aligned-text_right">
-                <span class="letter-spacing-extended">н</span>ад<span class="no-letter-spacing">о</span>
-              </span>
-            </h1>
-            <div class="cover__description">
-              <p class="cover__description-text">
-                Аукцион вещей, в которые никто не верил
-              </p>
-              <button class="bet-button" type="button">Сделать ставку
-              </button>
-            </div> 
+        <div class="cover__content">
+          <h1 class="cover__title">
+            <span class="aligned-text">
+              о<span class="letter-spacing-extended">н</span
+              ><span class="no-letter-spacing">о</span>
+            </span>
+            <span class="aligned-text_center">
+              те<span class="letter-spacing-extended">бе</span>
+            </span>
+            <span class="aligned-text_right">
+              <span class="letter-spacing-extended">н</span>ад<span
+                class="no-letter-spacing"
+                >о</span
+              >
+            </span>
+          </h1>
+          <div class="cover__description">
+            <p class="cover__description-text">
+              Аукцион вещей, в которые никто не верил
+            </p>
+            <button class="bet-button" type="button">Сделать ставку</button>
+          </div>
         </div>
-      </section> 
+      </section>
 
       <section class="lots">
         <h2 class="lots__heading heading">Лоты</h2>
+
         <ul class="lots__card-list">
           <li class="lots__card-list-item">
             <a href="#0" class="card__link">
@@ -84,6 +92,7 @@
               </article>
             </a>
           </li>
+
           <li class="lots__card-list-item">
             <a href="#0" class="card__link">
               <article class="card card_type_book">
@@ -124,14 +133,11 @@
             </a>
           </li>
         </ul>
-        <a href="#0" class="lots__look-more-link"
-          >посмотреть больше</a
-        >
+        <a href="#0" class="lots__look-more-link">посмотреть больше</a>
       </section>
-<!-- 
-            
+
       <section class="about">
-        <div class="about__column">
+        <div class="about__column-logo">
           <div class="about__logo-circle">
             <img
               src="images/logo-white.svg"
@@ -140,7 +146,7 @@
             />
           </div>
         </div>
-        <div class="about__column">
+        <div class="about__column-text">
           <h2 class="about__title heading">Об аукционе</h2>
           <div class="about__text">
             <p>
@@ -165,15 +171,17 @@
     </main>
 
     <footer class="footer">
-      <address class="footer__address">
+      <address class="address footer__address">
         <a href="tel:+99995555555">+9 999 555 5555</a>
         <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-        <p>наб. Принсенграхт 263-265, Амстердам</p>
+        <p>
+          наб. Принсенграхт 263-265, Амстердам
+        </p>
       </address>
       <nav class="footer__menu">
         <ul class="footer__menu-list">
           <li class="footer__menu-list-item">
-            <a href="#0" class="footer__menu-link">главная</a>
+            <a href="#0" class="footer__menu-link link__active">главная</a>
           </li>
           <li class="footer__menu-list-item">
             <a href="#0" class="footer__menu-link text__underline"
@@ -189,7 +197,12 @@
       </nav>
       <ul class="footer__social-list">
         <li class="footer__social-list-item">
-          <a href="#0" class="footer__social-link" rel="noopener noreferrer" target="_blank">
+          <a
+            href="#0"
+            class="footer__social-link"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             <img
               src="images/yt.svg"
               class="footer__social-icon"
@@ -198,15 +211,22 @@
           </a>
         </li>
         <li class="footer__social-list-item">
-          <a href="#0" class="footer__social-link" rel="opener noreferrer" target="_blank">
-            <img 
-              src="images/vk.svg" 
-              class="footer__social-icon" 
-              alt="Vk" />
+          <a
+            href="#0"
+            class="footer__social-link"
+            rel="opener noreferrer"
+            target="_blank"
+          >
+            <img src="images/vk.svg" class="footer__social-icon" alt="Vk" />
           </a>
         </li>
         <li class="footer__social-list-item">
-          <a href="#0" class="footer__social-link" rel="opener noreferrer" target="_blank">
+          <a
+            href="#0"
+            class="footer__social-link"
+            rel="opener noreferrer"
+            target="_blank"
+          >
             <img
               src="images/pinterest.svg"
               class="footer__social-icon"
@@ -215,7 +235,6 @@
           </a>
         </li>
       </ul>
-    </footer>  -->
-
+    </footer>
   </body>
 </html>
