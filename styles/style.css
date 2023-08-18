@@ -180,15 +180,23 @@
 }
 
 .card_type_film {
-  background: url(/ono-tebe-nado/images/card-lot-01.jpg) center/cover no-repeat;
-}
+  background-image: url(../images/card-lot-01.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;}
 
 .card_type_book {
-  background: url(/ono-tebe-nado/images/card-lot-02.jpg) center/cover no-repeat;
+  background-image: url(../images/card-lot-02.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .card_type_picture {
-  background: url(/ono-tebe-nado/images/card-lot-03.jpg) center/cover no-repeat;
+  background-image: url(../images/card-lot-03.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .card__content {
