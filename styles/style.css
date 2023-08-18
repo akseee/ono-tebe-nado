@@ -140,12 +140,6 @@
   cursor: pointer;
 } 
 
-
-
-
-
-
-
 .lots {
   margin: 180px 50px 0;
 }
@@ -161,8 +155,6 @@
   line-height: 47px;
   text-transform: uppercase;
 }
-
-
 
 .lots__card-list {
   display: flex;
@@ -181,6 +173,7 @@
 
 .card__link {
   height: 100%;
+  text-decoration: none;
 }
 
 .card {
