@@ -220,7 +220,7 @@ address {
   font-size: 20px;
   line-height: 23px;
 }
-/* 
+
 .about {
   display: grid;
   grid-template-columns: 430px 910px;
@@ -231,12 +231,13 @@ address {
 
 }
 
-  /* display: flex;
+/* display: flex;
   flex-direction: column;
   gap: 100px;
   align-self: end;
-  padding: 100px 0 0 25px; */
-  /*
+  padding: 100px 0 0 25px;  */
+  
+
 .about__logo-circle {
   max-width: 240px;
   max-height: 240px;
@@ -291,4 +292,4 @@ address {
 .footer__social-list-item {
   max-width: 48px;
   max-height: 48px;
-} */
+} 
