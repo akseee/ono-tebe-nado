@@ -160,6 +160,7 @@
   justify-content: space-between;
   gap: 25px;
   margin: 27px 0 32px;
+  color: white;
 }
 
 .lots__card-list-item {
@@ -177,7 +178,6 @@
 .card {
   position: relative;
   height: 100%;
-  color: white;
 }
 
 .card_type_film {
