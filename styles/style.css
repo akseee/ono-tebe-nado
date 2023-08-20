@@ -1,7 +1,7 @@
 .header {
-  display:flex;
-  justify-content: space-between;
+  display: grid;
   align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
   max-width: 1340px;
   margin: 92px auto;
 }
@@ -26,10 +26,10 @@
 
 .header__link {
   font-size: 18px;
-
 }
 
 .header__logo {
+  justify-self: center;
 }
 
 .header__logo-image {
@@ -46,6 +46,7 @@
 }
 
 .header__address {
+  justify-self: end;
   max-width: 240px;
 }
 
